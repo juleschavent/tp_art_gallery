@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* GENERAL */
+main {
+    max-width: 110rem;
+    margin: 0 auto
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header__title {
+    font-size: 4rem;
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    margin: 5rem auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__login {
+    background-color: rgb(83, 83, 255);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+}
+
+.header__logout {
+    background-color: rgb(211, 51, 51);
+}
+
+/* LOGIN */
+
+.container__login {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.login * {
+    margin-bottom: 2rem;
+}
+
+.login__title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.dashboard__title {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.dashboard__btn {
+    background-color: rgb(83, 83, 255);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    margin: 0 3rem;
+    text-decoration: none;
+}
+
+/* CREATE */
+
+.create__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.create__form * {
+    margin-bottom: 2rem;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5rem;
+    font-size: 1.6rem;
+}
+
+/* Art DETAILS */
+
+.details__container {
+    max-width: 90rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.details__title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.details__img {
+    max-width: 50rem;
+    margin-bottom: 2rem;
+}
+
+.details__desc {
+    text-align: left;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.details__auth {
+    padding: .5rem 1rem;
+    background-color: grey;
+    color: white;
+    font-size: 1.1rem;
+    text-align: right;
+    margin-bottom: 5rem;
+}
+
+.details__back {
+    font-size: 1.3rem;
+    color: rgb(26, 26, 26);
+}
+
+.details__currBid {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.details__bid {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: rgb(255, 233, 108);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.details__bid:hover {
+    transform: scale(1.1);
 }
